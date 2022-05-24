@@ -18,6 +18,7 @@ class Rectangle:
 
     @property
     def width(self):
+        """ Docstring of width """
         return self.__width
         """ returns the width attribute with value """
 
@@ -32,12 +33,12 @@ class Rectangle:
         if self.__width < 0:
             raise ValueError("width must be >= 0")
         self.__width = value
-        """ set width """
 
     @property
     def height(self):
+        """  height """
         return self.__height
-        """ returns the height attribute with value """
+        """ height attribute with value """
 
     @height.setter
     def height(self, value):
@@ -46,10 +47,11 @@ class Rectangle:
             value (int): contains size from __height attribute
         """
         if type(value) != int:
-            raise TypeError("height must be an integer")
+            raise TypeError("height must be int")
         if self.__height < 0:
             raise TypeError("height must be >= 0")
         self.__height = value
+        """ height """
 
     def area(self):
         """ Docstring of area """
@@ -57,7 +59,7 @@ class Rectangle:
         """ height * width """
 
     def perimeter(self):
-        """ Docstring of perimeter """
+        """ perimeter """
         if self.__width == 0 or self.__height == 0:
             return 0
         return (self.__width * 2) + (self.__height * 2)
