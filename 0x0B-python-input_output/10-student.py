@@ -3,7 +3,7 @@
 
 
 class Student:
-    """ class """
+    """ Student class """
     first_name = None
     last_name = None
     age = None
