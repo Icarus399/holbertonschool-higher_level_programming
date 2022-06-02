@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-''' add arguments to a list and saves them '''
+''' add arguments to a python list and then saves tem to a 
+    file'''
 
 import json
 from sys import argv
